@@ -1,17 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>IC Hello Starter</title>
-  <base href="/" />
-  <link rel="icon" href="/favicon.ico" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Landing Page</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<style>
+		body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+        }
+        .title {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.5em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+            max-width: 600px; /* Limit the width of the grid */
+            width: 100%; /* Full width */
+        }
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            color: #333;
+            font-size: 1.5em;
+        }
+        .grid-item:hover {
+            transform: scale(1.1);
+            background-color: #e0e0e0;
+        }
+	</style>
 </head>
-
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
 
+<h1 class="title">Hi, I'm Ankit Nandwani</h1>
+<h2 class="subtitle">Software Development Engineer in Test</h2>
+
+<div class="grid-container">
+	<div class="grid-item"><a href="https://www.linkedin.com/in/ankitnandwani/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+	<div class="grid-item"><a href="https://github.com/ankitnandwani" target="_blank"><i class="fab fa-github"></i></a></div>
+	<div class="grid-item"><a href="https://medium.com/@ankit_nandwani" target="_blank"><i class="fab fa-medium"></i></a></div>
+	<div class="grid-item"><a href="https://stackoverflow.com/users/4517890/ankit" target="_blank"><i class="fab fa-stack-overflow"></i></a></div>
+	<div class="grid-item"><a href="http://t.me/ankit_nandwani" target="_blank"><i class="fab fa-telegram"></i></a></div>
+	<div class="grid-item"><a href="https://x.com/_ankit_nandwani" target="_blank"><i class="fab fa-twitter"></i></a></div>
+	<div class="grid-item"><a href="https://www.instagram.com/ankit.nandwani/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+	<div class="grid-item"><a href="https://www.quora.com/profile/Ankit-Nandwani-2" target="_blank"><i class="fab fa-quora"></i></a></div>
+	<div class="grid-item"><a href="https://www.facebook.com/nandwaniankit/" target="_blank"><i class="fab fa-facebook"></i></a></div>
+	<div class="grid-item"><a href="https://leetcode.com/ankitnandwani/" target="_blank"><i class="fab fa-leetcode"></i></a></div>
+	<div class="grid-item"><a href="https://www.codewars.com/users/ankitnandwani" target="_blank"><i class="fab fa-codewars"></i></a></div>
+	<div class="grid-item"><a href="resume.pdf" download><i class="fas fa-file-download"></i></a></div>
+</div>
+
+</body>
 </html>
